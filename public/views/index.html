@@ -3,9 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Angular Router</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
+    <base href="/">
   </head>
-  <body>
-    HERE
+  <body ng-app="myApp">
+    <nav>
+      <ul>
+        <li><a href="/blue">Blue</a></li>
+        <li><a href="/yellow">Yellow</a></li>
+      </ul>
+    </nav>
+    <ng-view></ng-view>
   </body>
 </html>
